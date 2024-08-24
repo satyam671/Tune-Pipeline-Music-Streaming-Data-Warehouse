@@ -1,5 +1,8 @@
 # Redhsift IaC (Infrastructure as Code) Utility
 
+![Infrastructure-Code](https://github.com/user-attachments/assets/c442464e-7a57-4043-9237-d8e4ebb27c1e)
+![IaC](https://github.com/user-attachments/assets/03b190a2-d01e-4288-8904-62fa801fa818)
+
 Link to Code: [Redshift_IaC_Utility](https://github.com/satyam671/Tune-Pipeline-Music-Streaming-Data-Warehouse/blob/main/Redshift_Cluster_IaC.py)
 
 This utility automates the Infrastructure deployment and configuration for the Redshift cluster along with the prerequisites to spin up the cluster. 
