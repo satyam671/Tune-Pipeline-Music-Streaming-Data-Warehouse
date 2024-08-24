@@ -107,7 +107,7 @@ $ pip install -r requirements.txt
 ```
 
 ## How to Run
-#### Use [Redshift_Cluster_IaC.py](https://github.com/san089/Data_Engineering_Projects/blob/master/Redshift_Cluster_IaC.py "Redshift_Cluster_IaC.py") to launch Redshift Cluster.
+#### Use [Redshift_Cluster_IaC.py](https://github.com/satyam671/Tune-Pipeline-Music-Streaming-Data-Warehouse/blob/main/Redshift_Cluster_IaC.py) to launch Redshift Cluster.
 
 #### Setup Configurations 
 Setup the dwh.cfg file (File not added in this repository). File format for **dwh.cfg**
