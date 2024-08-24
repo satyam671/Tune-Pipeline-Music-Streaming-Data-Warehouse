@@ -1,14 +1,14 @@
 # Redhsift IaC (Infrastructure as Code) Utility
 
-Link to Code: [Redshift_IaC_Utility](https://github.com/san089/Udacity-Data-Engineering-Projects/blob/master/Redshift_Cluster_IaC.py)
+Link to Code: [Redshift_IaC_Utility](https://github.com/satyam671/Tune-Pipeline-Music-Streaming-Data-Warehouse/blob/main/Redshift_Cluster_IaC.py)
 
-This utility automates the Infrastructure deployement and configuration for Redshift cluster along with the pre-requisites to spin up the cluster. 
+This utility automates the Infrastructure deployment and configuration for the Redshift cluster along with the prerequisites to spin up the cluster. 
 
 The code performs 3 setups:
 
  - Create or delete an IAM role and apply appropriate policy to allow access to other AWS services 
- - Create or delete a VPC security group, with appropriate Indound rules to allow connection to the cluster.
- - Finally, spin up a cluster using the Hardware configurations defined in config file, set-up master DB configs, apply cluster permission's with the IAM role and set VPC security groups as created above.
+ - Create or delete a VPC security group, with appropriate Inbound rules to allow connection to the cluster.
+ - Finally, spin up a cluster using the Hardware configurations defined in the config file, set up master DB configs, apply cluster permissions with the IAM role and set VPC security groups as created above.
 
 ### Setup Configurations File - cluster.config
 
@@ -17,7 +17,7 @@ The code performs 3 setups:
     SECRET=<Your Secret Access Key>
     
     [DWH] 
-    DWH_CLUSTER_TYPE=<single or multi node cluster>
+    DWH_CLUSTER_TYPE=<single or multi-node cluster>
     DWH_NUM_NODES=<number of nodes>
     DWH_NODE_TYPE=<Node type e.g. dc2.large>
     DWH_CLUSTER_IDENTIFIER=<cluster identifier>
@@ -50,19 +50,19 @@ The code performs 3 setups:
     
     usage: Redshift_Cluster_IaC.py [-h] -c  -d  [-v]
     
-    A Redshift cluster IaC (Infrastructure as Code). It creates IAM role for the
-    Redshift, creates security group and sets up ingress parameters. Finally spin-
+    A Redshift cluster IaC (Infrastructure as Code). It creates an IAM role for the
+    Redshift creates a security group and sets up ingress parameters. Finally, spin-
     up a redshift cluster.
     
     required arguments:
-      -c , --create      True or False. Create IAM roles, security group and
-                         redshift cluster if ie does not exist.
-      -d , --delete      True or False. Delete the roles, securitygroup and
+      -c, --create      True or False. Create IAM roles, security groups and
+                         redshift cluster if it does not exist.
+      -d, --delete      True or False. Delete the roles, security group and
                          cluster. WARNING: Deletes the Redshift cluster, IAM role
                          and security group.
     
     optional arguments:
-      -v , --verbosity   Increase output verbosity. Default set to DEBUG. 
+      -v, --verbosity   Increase output verbosity. The default is set to DEBUG. 
     
 ### How to run
 Create a new cluster: 
